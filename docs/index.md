@@ -118,6 +118,6 @@ Link to Employee Data:  https://github.com/tollivne/IntroToProg-Python-Mod09/blo
 
 ## Useful Websites  
 
-[Google Homepage] (https://www.google.com "Google's Homepage")
+![Google Homepage](https://www.google.com "Google's Homepage")
 
-[GitHub Webpage Code CheatSheet] (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+![GitHub Webpage Code CheatSheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
