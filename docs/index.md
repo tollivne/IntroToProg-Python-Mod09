@@ -1,7 +1,7 @@
+# Assignment 9
 # Separating Concerns into Modules
-
-
-
+**Dev:** *N. Tolliver*  
+**Date:** *6.14.2020*
 
 ## Introduction  
 The purpose of this script is to read data from an existing employee database, prompt the user for a new Employee ID, First Name, and Last Name and add it to the database.  The user then has the option of displaying the current data that is in memory, adding more items, saving the data, or exiting the program.  The user experience is quite similar to that of the last script (Assignment 8).  The primary difference is not so much in the user experience as it is the methodology used in the script.  Whereas previously, the functions and classes were placed in the main code, for this script, the functions and classes are separated into different files and the main program is used to call these “modules.”  The modules are “imported” in the beginning of the main program and then when they need to be used, the syntax uses the module name (or shortcut name) and then the name of the function and then the name of the field, if referencing an individual variable.  The output of the program is shown running in both PyCharm and the CMD window.
@@ -16,12 +16,11 @@ A module is a file that is separate from the main program that contains classes 
 ### What is the "main" module?   
 The main module is the one that calls the other modules by “importing” the “modules.”  They are then referred to later in the script by calling the modules using the module name and then the names of the classes or functions.  You can create your own custom modules or download a myriad of available modules from the internet.  Modules are called using the following syntax. 
 
-
 Import ModuleName
 
 To call a stand alone function:		ModuleName.FunctionName()
 To create an object from a class:	ObjectName = ModuleName.ClassName()
-To call a function within a class:		ModuleName.ClassName.FunctionName()
+To call a function within a class:	ModuleName.ClassName.FunctionName()
 
 ### What is the "__name__ " System Variable?   
 The __name__ is used to verify to the programmer that we are working with the main program and not one of the modules.  It returns the name of the file that you are working with unless it is the interactive module and in that case, it returns the string “__main__”.  The __name__ variable is often used along with error handling to test to see if it returns “__main__.”  If it does not return main, then the program can print out a statement telling the user that module is not meant to be run as a standalone program.  If it returns the name “__main__” then you can have the program print out a statement like “This is the main program.”
@@ -48,8 +47,7 @@ Unified Modeling Language is a way of representing relationships between differe
 ## Building the Test Harness  
 The test harness was built by importing the modules and performing very simple tasks such as reading in data and printing data.  The purpose was to see if the imports and the calls function properly before proceeding to do more complex tasks with the functions and classes within the modules.  The testing is done before creating the main module.  We were given code for the different modules and had to link them properly, add code where indicated and run the test harness.  In running it, I found the issues shown in Figure 1:
 
-
-
+![Figure 1](https://tollivne.github.io/IntroToProg-Python-Mod09/Figure1.png "Comparison between two different methods")   
 **Figure 1 - Comparison between two different methods**  
 
 The code on the right did not function properly.  It called the “DataClasses” module and then called the “Employee” function.  The Employee class has three fields.  The first fiend is the hidden field employee_id, the second field is first_name, and the third field is last_name.
@@ -69,8 +67,7 @@ print()  # Add an extra line for looks
 
 Running this code produces the error message shown in Figure 2.  
 
-
-
+![Figure 2](https://tollivne.github.io/IntroToProg-Python-Mod09/Figure2.png "Error message produced when running Listing11")  
 **Figure 2 - Error message produced when running Listing11**  
 
 The reason this code produces this error message is because it is calling the Employee Class of the DataClasses Module with only one parameter when it requires the other two, first name, and last name.
@@ -90,23 +87,22 @@ print()  # Add an extra line for looks
 ## Building the Main Module
 The main module imported each of the following Modules:
 
-1)	IOClasses
-2)	DataClasses
-3)	ProcessingClasses
+1) IOClasses
+2) DataClasses
+3) ProcessingClasses
 
 The main program was then edited to include error handling, a while loop to return to the main menu unless the user chooses to exit and calls to each of the modules.  The code was also edited to add the user’s choice and to run an if/then/else loop depending on which option was chosen.
 
 Once this problem was corrected, the program ran smoothly in PyCharm as shown in Figure 3.
 
-
-
-
+![Figure 3a](https://tollivne.github.io/IntroToProg-Python-Mod09/Figure3a.png "Final code results run in PyCharm")  
+![Figure 3b](https://tollivne.github.io/IntroToProg-Python-Mod09/Figure3b.png "Final code results run in PyCharm")  
 
 **Figure 3 - Final code results run in PyCharm**  
 
 Figure 4 shows the file running in the CMD window.  
 
-
+![Figure 4](https://tollivne.github.io/IntroToProg-Python-Mod09/Figure4.png "Code results run in CMD Window")  
 **Figure 4 - Code results run in CMD Window**  
 
 ## Summary  
