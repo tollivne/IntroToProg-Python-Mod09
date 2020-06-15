@@ -115,3 +115,9 @@ Link to ProcessingClasses:  https://github.com/tollivne/IntroToProg-Python-Mod09
 Link to Main Program:  https://github.com/tollivne/IntroToProg-Python-Mod09/blob/master/Main.py
 Link to Test Harness:  https://github.com/tollivne/IntroToProg-Python-Mod09/blob/master/TestHarness.py
 Link to Employee Data:  https://github.com/tollivne/IntroToProg-Python-Mod09/blob/master/EmployeeData.txt
+
+## Useful Websites  
+
+[Google Homepage] (https://www.google.com "Google's Homepage")
+
+[GitHub Webpage Code CheatSheet] (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
