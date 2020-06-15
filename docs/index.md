@@ -109,3 +109,4 @@ Figure 4 shows the file running in the CMD window.
 This script introduced the concept of using modules for “separation of concerns.”  It is a concept we have been building upon in previous scripts, first by writing the code without any functions, then by taking out redundant operations and putting them into functions.  Then we created objects so we could customize the data by adding formatting and error handling.  This made it fairly straightforward to take the classes and functions out and put them into modules and call them using a main function.  As programs get bigger, however, I can see the benefit of using UML to diagram which functions and classes are in which modules and how they tree up to one another.  I am looking forward to the next assignment.
 
 Word Document:  https://github.com/tollivne/IntroToProg-Python-Mod09/blob/master/Assignment09.docx
+DataClasses:  https://github.com/tollivne/IntroToProg-Python-Mod09/blob/master/DataClasses.py
